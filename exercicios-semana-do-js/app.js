@@ -90,3 +90,9 @@ const cart = [
 - Nome 2
 - Nome 3
 */
+
+const cartNames = cart.reduce((acc, {name}) => {
+  return `${acc}- ${name}\n`
+}, '')
+console.log('Game list:')
+console.log(cartNames)
