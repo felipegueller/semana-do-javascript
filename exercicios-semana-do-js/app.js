@@ -20,6 +20,10 @@ const pairNumber = randomNumbers.filter(number => number % 2 === 0)
 
 const crazyNumbers = [937, 5, 395, 402, 501, 333, 502, 781, 3, 691]
 
+const quantityNumbersShortherThan501 = crazyNumbers.reduce((acc, number) => {
+  return number <= 501 ? ++acc : acc
+}, 0)
+
 /*
   03
 
