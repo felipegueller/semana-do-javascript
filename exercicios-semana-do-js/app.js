@@ -9,6 +9,9 @@
 
 const randomNumbers = [10, 30, 15, 25, 50, 40, 5]
 
+const oddNumbers = randomNumbers.filter(number => number % 2 === 1)
+const pairNumber = randomNumbers.filter(number => number % 2 === 0)
+
 /*
   02
 
@@ -91,8 +94,4 @@ const cart = [
 - Nome 3
 */
 
-const cartNames = cart.reduce((acc, {name}) => {
-  return `${acc}- ${name}\n`
-}, '')
-console.log('Game list:')
-console.log(cartNames)
+const cartNames = cart.reduce((acc, { name }) => `${acc}- ${name}\n`, '')
