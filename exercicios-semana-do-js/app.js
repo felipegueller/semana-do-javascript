@@ -57,9 +57,10 @@ const tarantinoMovies = [
   { name: 'Kill Bill: Volume 1', release: 2003 }
 ]
 
-const moviesReleasedBefore2000 = 
-  tarantinoMovies.filter(({release}) => release <= 2000)
-  
+const moviesReleasedBefore2000 = tarantinoMovies.filter(
+  ({ release }) => release <= 2000
+)
+
 /*
   05
 
@@ -72,10 +73,12 @@ const tvShows = [
   { name: 'Mr. Robot', releaseYear: 2015 },
   { name: 'True Detective', releaseYear: 2014 },
   { name: 'Hannibal', releaseYear: 2013 },
-  { name: 'The Handmaid\'s Tale', releaseYear: 2017 },
+  { name: "The Handmaid's Tale", releaseYear: 2017 },
   { name: 'House M.D.', releaseYear: 2004 },
   { name: 'Watchmen', releaseYear: 2019 }
 ]
+
+const tvShowsNames = tvShows.map(({ name }) => name)
 
 /*
   06
@@ -92,7 +95,7 @@ const cart = [
   { name: 'Dark Souls III', price: 95.03 },
   { name: 'Shadow of the Tomb Raider', price: 101.19 },
   { name: 'Sekiro: Shadows Die Twice', price: 179.99 },
-  { name: 'Resident Evil 2', price: 119.90 },
+  { name: 'Resident Evil 2', price: 119.9 },
   { name: 'Death Stranding', price: 149.99 }
 ]
 
