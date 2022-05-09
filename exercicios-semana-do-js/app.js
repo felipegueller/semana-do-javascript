@@ -34,6 +34,8 @@ const quantityNumbersShortherThan501 = crazyNumbers.reduce((acc, number) => {
 */
 
 const numbers = [5, 7, 3]
+const squareNumbers = numbers.map(number => number ** 2)
+console.log(squareNumbers)
 
 /*
   04
